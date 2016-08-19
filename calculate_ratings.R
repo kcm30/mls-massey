@@ -29,16 +29,21 @@ apply(results, 1, AddGame)
 M[, kTeamCount + 1] <- rep(1, kGamesPlayed)
 ## grab our xgd column
 xgd <- results$xgd
+## add in a row for connectivity
+conn.row <- sample(1:kGamesPlayed, 1)
+M[conn.row, ] <- c(rep(1, kTeamCount), 0)
+xgd[conn.row] <- 0
+## matrix multiplication to make the system solvable
+transpose.M <- t(M)
+MtM <- transpose.M %*% M
+Mtxgd <- transpose.M %*% as.vector(xgd)
 
 ## now solve the linear equations M * ratings = xgd
-fit <-fastLm(X = M, y = xgd) 
-ratings <- fit$coefficients
-## remove the na, replace with 0 since that's the baseline
-ratings[is.na(ratings)] <- 0
+ratings <- solve(MtM, Mtxgd)
 
 ## spit out the mean absolute error
-mae <- sum(abs((M %*% ratings) - xgd))/kGamesPlayed
-print(paste("The mean absolute error is:", mae))
+mae <- sum(abs((M %*% as.matrix(ratings)) - xgd))/kGamesPlayed
+print(paste("The mean absolute error is:", round(mae, 3)))
 
 ## now write the team mapping and ratings to a csv
 teams <- c(as.vector(team.mapping$team), "Home Field Adv.")
