@@ -1,7 +1,7 @@
 Massey Ratings for MLS, built separately on goal difference by game, and expected goal difference by game.
 Those ratings are then used to calculate strength of schedule for each team, for their remaining schedule as well as for the games they've already played.
 
-Resources:
+##### Resources:
 
 The 2016 MLS schedule used is from Matthew Bernhardt - <https://gist.github.com/matt-bernhardt/9d1b276197159c48d0c0>
 
