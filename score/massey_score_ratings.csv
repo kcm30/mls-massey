@@ -1,22 +1,22 @@
-"","teams","ratings"
-"1","New York",0.23599082622645
-"2","Orlando City",-0.0872905445868497
-"3","Chicago",-0.150606748922888
-"4","FC Dallas",-0.589397866920261
-"5","Houston",0.107140364618016
-"6","San Jose",0.0203812170990562
-"7","Portland",0.397981370570751
-"8","Vancouver",-0.302239839105057
-"9","Seattle",0.112818836185499
-"10","L.A. Galaxy",0.0821025314368621
-"11","New England",0.00670953558927502
-"12","Colorado",-0.0225659067766341
-"13","Salt Lake",-0.49603943062351
-"14","Columbus",-0.272311198628987
-"15","Montreal",0.342275488866731
-"16","Kansas City",0.196392985354401
-"17","New York City FC",-0.104304267038781
-"18","DC United",0.559233738241553
-"19","Philadelphia",-0.0293818134407466
-"20","Toronto",-0.00688927814488097
-"21","Home Field Adv.",0.677310601411647
+,teams,ratings
+1,Home Field Adv.,0.64
+2,DC United,0.52
+3,Montreal,0.46
+4,Portland,0.33
+5,New York,0.27
+6,Kansas City,0.21
+7,Seattle,0.17
+8,New England,0.08
+9,L.A. Galaxy,0.08
+10,Philadelphia,0.07
+11,San Jose,0.07
+12,Houston,0.04
+13,Colorado,-0.04
+14,Orlando City,-0.05
+15,New York City FC,-0.07
+16,Toronto,-0.11
+17,Chicago,-0.27
+18,Vancouver,-0.34
+19,Columbus,-0.36
+20,Salt Lake,-0.48
+21,FC Dallas,-0.59
